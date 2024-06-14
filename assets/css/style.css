@@ -10,4 +10,22 @@
 @import url(./desktop.css) screen and (min-width: 992px);
 
 /* general settings */
+:root {
+    --primary-color: #ececec;
+    --secondary-color: #fafafa;
+    --tertiary-color: #e3cedc;
+    --font: 'roboto', sans-serif;;
+    
+}
 
+.dark-mode {
+    --primary-color: #423a53;
+    --secondary-color: #352F44;
+    --tertiary-color: #5a5070;
+    --text-color: #B9B4C7;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--primary-color);
+}
