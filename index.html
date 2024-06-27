@@ -8,14 +8,16 @@
     <!-- stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body>
+  <body id="body">
     <header class="header">
-      <button class="header__button"><i class="fa-solid fa-moon"></i></button>
+      <button class="header__button" id="darkModeBtn">
+        <i id="darkModeIcon" class="fa-solid fa-sun button__icon"></i>
+      </button>
 
       <img src="/assets/img/Logo.png" class="header__logo" />
 
       <button class="header__button">
-        <i class="fa-solid fa-download"></i>
+        <i class="fa-solid fa-download button__icon"></i>
       </button>
     </header>
 
@@ -26,7 +28,7 @@
     </main>
 
     <aside class="panel">
-       <!-- image panel -->
+      <!-- image panel -->
       <section>
         <h2>Imágen</h2>
 
@@ -92,9 +94,9 @@
     <aside class="memeSettings">
       <div class="memeSettings__navBar">
         <button class="navBar__button">
-          <i class="fa-solid fa-image"></i>
+          <i class="fa-solid fa-image button__icon"></i>
         </button>
-        <button class="navBar__button"><i class="fa-solid fa-font"></i></button>
+        <button class="navBar__button"><i class="fa-solid fa-font button__icon"></i></button>
       </div>
     </aside>
 

@@ -26,6 +26,11 @@ body {
   height: 5dvh;
   border: none;
   border-radius: 10px;
+  background-color: var(--tertiary-color);
+}
+
+.button__icon {
+  color: var(--text-color);
 }
 
 /* meme */
@@ -42,6 +47,7 @@ body {
   height: 100dvh;
   width: 100dvw;
   background-color: var(--primary-color);
+  display: none;
 
 }
 
@@ -52,7 +58,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top: 1px solid rgb(231, 231, 231);
+  border-top: 1px solid var(--primary-color);
   background-color: var(--secondary-color);
 }
 
@@ -62,5 +68,5 @@ body {
   border-radius: 10px;
   height: 5dvh;
   width: 5dvh;
-
+  background-color: var(--tertiary-color);
 }
