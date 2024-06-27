@@ -32,63 +32,76 @@
         <i class="fa-solid fa-xmark closeBtn__icon"></i>
       </button>
       <!-- image panel -->
-      <section class="panel__image hidden" id="panelImage">
-        <h2 class="image__title">IMAGEN</h2>
+      <section class="panel__imageSettings hidden" id="panelImage">
+        <h2 class="imageSettings__title">IMAGEN</h2>
 
-        <div class="image__container">
+        <div class="imageSettings__container">
           <h3 class="container__title">URL</h3>
           <input type="text" class="container__inputText"/>
         </div>
 
-        <div>
-          <h3>Fondo</h3>
-          <input type="color" name="background" id="" />
-          <span>#FFFFFF</span>
-          <select name="blendingModes" id=""></select>
+        <div class="imageSettings__container">
+          <h3 class="container__title">Fondo</h3>
+
+
+          <div class="container__background">
+          <div class="background__color">
+          <input type="color" name="background" id="" class="color__input" value="#FFFFFF"/>
+          <span class="color__hexa">#FFFFFF</span>
+        </div>
+          <select name="blendingModes" id="" class="background__select">
+            <option value="">Ninguno</option>
+            <option value="">Aclarar</option>
+            <option value="">Oscurecer</option>
+            <option value="">Diferencia</option>
+            <option value="">Luminosidad</option>
+            <option value="">Multiplicar</option>
+          </select>
+        </div>
         </div>
 
-        <div>
-          <h3>Filtros</h3>
+        <div class="imageSettings__container">
+          <h3 class="container__title">Filtros</h3>
 
-          <div>
-            <label for="brightness">Brillo</label>
+          <div class="container__filter">
+            <label for="brightness" class="filter__title">Brillo</label>
+            <input type="range" name="" id="" class="filter__range"/>
+          </div>
+          <div class="container__filter">
+            <label for="opacity" class="filter__title">Opacidad</label>
             <input type="range" name="" id="" />
           </div>
-          <div>
-            <label for="opacity">Opacidad</label>
+          <div class="container__filter">
+            <label for="contrast" class="filter__title">Contraste</label>
             <input type="range" name="" id="" />
           </div>
-          <div>
-            <label for="contrast">Contraste</label>
+          <div class="container__filter">
+            <label for="blur" class="filter__title">Desenfoque</label>
             <input type="range" name="" id="" />
           </div>
-          <div>
-            <label for="blur">Desenfoque</label>
+          <div class="container__filter">
+            <label for="grayscale" class="filter__title">Escala de Grises</label>
             <input type="range" name="" id="" />
           </div>
-          <div>
-            <label for="grayscale">Escala de Grises</label>
+          <div class="container__filter">
+            <label for="sepia" class="filter__title">Sepia</label>
             <input type="range" name="" id="" />
           </div>
-          <div>
-            <label for="sepia">Sepia</label>
+          <div class="container__filter">
+            <label for="hue" class="filter__title">HUE</label>
             <input type="range" name="" id="" />
           </div>
-          <div>
-            <label for="hue">HUE</label>
+          <div class="container__filter">
+            <label for="saturation" class="filter__title">Saturación</label>
             <input type="range" name="" id="" />
           </div>
-          <div>
-            <label for="saturation">Saturación</label>
-            <input type="range" name="" id="" />
-          </div>
-          <div>
-            <label for="negative">Negativo</label>
+          <div class="container__filter">
+            <label for="negative" class="filter__title">Negativo</label>
             <input type="range" name="" id="" />
           </div>
         </div>
 
-        <button>
+        <button class="imageSettings__restoreBtn">
           <i class="fa-solid fa-arrow-rotate-left"></i>
           Reestablecer filtros
         </button>
