@@ -47,8 +47,26 @@ body {
   height: 100dvh;
   width: 100dvw;
   background-color: var(--primary-color);
-  display: none;
+  display: flex;
+  flex-direction: column;
+}
 
+.panel__closeBtn {
+  padding: 4%;
+  background: none;
+  border: none;
+  align-self: flex-end;
+  position: absolute;
+}
+
+.closeBtn__icon {
+  color: var(--text-color);
+  font-size: 20px;
+}
+
+/* image panel */
+.image__title { 
+  text-align: center;
 }
 
 /* nav bar */

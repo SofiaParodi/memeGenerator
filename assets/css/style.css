@@ -14,7 +14,7 @@
     --primary-color: #ececec;
     --secondary-color: #fafafa;
     --tertiary-color: #e0e0e0;
-    --text-color: #000000;
+    --text-color: #555555;
     --font: 'roboto', sans-serif;;
     
 }
@@ -24,6 +24,10 @@
     --secondary-color: #352F44;
     --tertiary-color: #5a5070;
     --text-color: #B9B4C7;
+}
+
+.hidden {
+    display: none;
 }
 
 body {

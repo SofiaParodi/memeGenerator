@@ -13,4 +13,25 @@ darkModeBtn.addEventListener('click', function() {
         darkModeIcon.classList.remove('fa-moon');
         darkModeIcon.classList.add('fa-sun');
     }
+});
+
+/* panel */ 
+const closeBtn = document.getElementById("closeBtn");
+
+closeBtn.addEventListener('click', function () {
+    panel.classList.add("hidden");
 })
+
+/* image btn */
+const imageBtn = document.getElementById("imageBtn");
+const panel = document.getElementById("panel");
+const panelImage = document.getElementById("panelImage");
+
+
+imageBtn.addEventListener('click', function () {
+    panel.classList.remove("hidden");
+    panelImage.classList.remove("hidden");
+});
+
+
+

@@ -27,14 +27,17 @@
       </div>
     </main>
 
-    <aside class="panel">
+    <aside class="panel hidden" id="panel">
+      <button class="panel__closeBtn" id="closeBtn">
+        <i class="fa-solid fa-xmark closeBtn__icon"></i>
+      </button>
       <!-- image panel -->
-      <section>
-        <h2>Imágen</h2>
+      <section class="panel__image hidden" id="panelImage">
+        <h2 class="image__title">IMAGEN</h2>
 
-        <div>
-          <h3>URL</h3>
-          <input type="text" />
+        <div class="image__container">
+          <h3 class="container__title">URL</h3>
+          <input type="text" class="container__inputText"/>
         </div>
 
         <div>
@@ -85,7 +88,10 @@
           </div>
         </div>
 
-        <button>Reestablecer filtros</button>
+        <button>
+          <i class="fa-solid fa-arrow-rotate-left"></i>
+          Reestablecer filtros
+        </button>
       </section>
 
       <!-- text panel -->
@@ -93,10 +99,12 @@
 
     <aside class="memeSettings">
       <div class="memeSettings__navBar">
-        <button class="navBar__button">
+        <button class="navBar__button" id="imageBtn">
           <i class="fa-solid fa-image button__icon"></i>
         </button>
-        <button class="navBar__button"><i class="fa-solid fa-font button__icon"></i></button>
+        <button class="navBar__button" id="textBtn">
+          <i class="fa-solid fa-font button__icon"></i>
+        </button>
       </div>
     </aside>
 
