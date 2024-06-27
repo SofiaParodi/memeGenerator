@@ -36,12 +36,13 @@ body {
   width: 90dvw;
 }
 
-/* url menu */
-.imageMenu {
+/* panel */
+.panel {
   position: absolute;
   height: 100dvh;
   width: 100dvw;
-  background-color: transparent;
+  background-color: var(--primary-color);
+
 }
 
 /* nav bar */

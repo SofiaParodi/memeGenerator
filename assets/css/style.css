@@ -14,6 +14,7 @@
     --primary-color: #ececec;
     --secondary-color: #fafafa;
     --tertiary-color: #e3cedc;
+    --text-color: #000000;
     --font: 'roboto', sans-serif;;
     
 }
@@ -27,5 +28,6 @@
 
 body {
     font-family: var(--font);
+    color: var(--text-color);
     background-color: var(--primary-color);
 }
