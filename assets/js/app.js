@@ -16,23 +16,23 @@ darkModeBtn.addEventListener('click', function() {
 });
 
 
-/* image btn */
+/* image and text btn */
 const imageBtn = document.getElementById("imageBtn");
 const panel = document.getElementById("panel");
 const panelImage = document.getElementById("imagePanel");
+const textBtn = document.getElementById("textBtn");
+const panelText = document.getElementById("textPanel")
 
 
 imageBtn.addEventListener('click', function () {
     panel.classList.remove("hidden");
+    panelText.classList.add("hidden");
     panelImage.classList.remove("hidden");
 });
 
-/* text btn */
-const textBtn = document.getElementById("textBtn");
-const panelText = document.getElementById("textPanel")
-
 textBtn.addEventListener('click', function () {
     panel.classList.remove("hidden");
+    panelImage.classList.add("hidden");
     panelText.classList.remove("hidden");
 })
 

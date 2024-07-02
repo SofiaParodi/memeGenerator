@@ -1,0 +1,60 @@
+body {
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* header */
+.header {
+  height: 7dvh;
+  position: absolute;
+  top: 0;
+  z-index: 1;
+}
+
+.header__button {
+  width: 10dvh;
+}
+
+.header__logo {
+  width: 17dvh;
+}
+
+/* meme */
+
+.main__meme {
+  width: 30dvw;
+  height: 65dvh;
+}
+
+/* aside */
+.aside__navBar {
+  flex-direction: column;
+  width: 3dvw;
+  height: 93dvh;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  justify-content: flex-start;
+}
+
+.navBar__button {
+  height: 5dvh;
+  width: 5dvh;
+  margin: 15%;
+}
+
+/* panel */
+.panel {
+    width: 25dvw;
+    height: 93dvh;
+    right: 0;
+    bottom: 0;
+    background-color: var(--secondary-color);
+}
+
+/* panel content */
+.container__inputText {
+    width: 24dvw;
+}
