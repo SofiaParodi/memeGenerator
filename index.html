@@ -32,15 +32,15 @@
         <i class="fa-solid fa-xmark closeBtn__icon"></i>
       </button>
       <!-- image panel -->
-      <section class="panel__imageSettings hidden" id="panelImage">
-        <h2 class="imageSettings__title">IMAGEN</h2>
+      <section class="panel__settings hidden" id="imagePanel">
+        <h2 class="settings__title">IMAGEN</h2>
 
-        <div class="imageSettings__container">
+        <div class="settings__container">
           <h3 class="container__title">URL</h3>
           <input type="text" class="container__inputText"/>
         </div>
 
-        <div class="imageSettings__container">
+        <div class="settings__container">
           <h3 class="container__title">Fondo</h3>
 
 
@@ -60,7 +60,7 @@
         </div>
         </div>
 
-        <div class="imageSettings__container">
+        <div class="settings__container">
           <h3 class="container__title">Filtros</h3>
 
           <div class="container__filter">
@@ -101,17 +101,118 @@
           </div>
         </div>
 
-        <button class="imageSettings__restoreBtn">
+        <button class="settings__restoreBtn">
           <i class="fa-solid fa-arrow-rotate-left"></i>
           Reestablecer filtros
         </button>
       </section>
 
       <!-- text panel -->
+      <section class="panel__settings hidden" id="textPanel">
+        <h2 class="settings__title">TEXTO</h2>
+
+        <div class="settings__container">
+          <h3 class="container__title">Superior</h3>
+          <input type="text" class="container__inputText"/>
+
+          <div class="container__checkbox">
+          <input type="checkbox" name="" id="" class="checkbox__input">
+          <label for="" class="checkbox__text">Sin texto superior</label>
+        </div>
+      </div>
+
+      <div class="settings__container">
+        <h3 class="container__title">Inferior</h3>
+        <input type="text" class="container__inputText"/>
+
+        <div class="container__checkbox">
+        <input type="checkbox" name="" id="" class="checkbox__input"> 
+        <label for="" class="checkbox__text">Sin texto inferior</label>
+      </div>
+    </div>
+
+    <div class="settings__container">
+      <h3 class="container__title">Fuente</h3>
+      <select name="" id="" class="container__largeSelect">
+        <option value="">Arial</option>
+        <option value="">Arial Black</option>
+        <option value="">American Typewriter</option>
+        <option value="">Andale Mono</option>
+        <option value="">Comic Sans MS</option>
+        <option value="">Helvetica</option>
+        <option value="">Impact</option>
+        <option value="">Verdana</option>
+        <option value="">Times New Roman</option>
+      </select>
+      <div class="container__alignment">
+        <input type="text" name="" id="" class="alignment__input">
+        <button class="alignment__button">
+          <i class="fa-solid fa-align-left"></i>
+        </button>
+        <button class="alignment__button">
+          <i class="fa-solid fa-align-center"></i>
+        </button>
+        <button class="alignment__button">
+          <i class="fa-solid fa-align-right"></i>
+        </button>
+      </div>
+    </div>
+
+     <div class="settings__container">
+      <div class="container__row">
+      <div class="row__color">
+        <h3 class="color__title">Color</h3>
+        <div class="color__text">
+          <input type="color" name="background" id="" class="text__input" value="#FFFFFF"/>
+          <span class="text__hexa">#FFFFFF</span>
+        </div>
+      </div>
+
+      <div class="row__color">
+        <h3 class="color__title">Fondo</h3>
+        <div class="color__background">
+          <input type="color" name="background" id="" class="background__input" value="#FFFFFF"/>
+          <span class="background__hexa">#FFFFFF</span>
+        </div>
+      </div>
+      </div>
+
+      <div class="container__checkbox">
+      <input type="checkbox" name="" id="" class="checkbox__input">
+      <label for="" class="checkbox__text">Fondo transparente</label>     
+     </div>
+    </div>
+
+    <div class="settings__container">
+      <h3 class="container__title">Contorno</h3>
+      <div class="container__row">
+        <button class="row__button">Ninguno</button>
+        <button class="row__button">Claro</button>
+        <button class="row__button">Oscuro</button>
+      </div>
+
+    </div>
+
+    <div class="settings__container">
+      <h3 class="container__title">Espaciado</h3>
+      <input type="text" class="container__inputText"/>
+      </div>
+      <div class="settings__container">
+        <h3 class="container__title">Interlineado</h3>
+        <select name="" id="" class="container__largeSelect">
+          <option value="">0.8</option>
+          <option value="">1</option>
+          <option value="">1.2</option>
+          <option value="">1.5</option>
+          <option value="">2</option>
+          <option value="">2.5</option>
+        </select>
+        </div>
+      </section>
     </aside>
 
-    <aside class="memeSettings">
-      <div class="memeSettings__navBar">
+    <aside class="aside">
+      <div class="aside__navBar">
         <button class="navBar__button" id="imageBtn">
           <i class="fa-solid fa-image button__icon"></i>
         </button>

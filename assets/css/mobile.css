@@ -65,11 +65,11 @@ body {
 }
 
 /* panel */
-.imageSettings__title { 
+.settings__title { 
   text-align: center;
 }
 
-.imageSettings__container {
+.settings__container {
   padding: 0 2%;
   display: flex;
   flex-direction: column;
@@ -77,26 +77,26 @@ body {
   margin-bottom: 2%;
 }
 
-.container__title {
+.container__title, .color__title {
   font-size: 16px;
-  margin: 5px 0;
+  margin: 1% 0;
 }
 
-.container__inputText {
+.container__inputText, .alignment__input {
   width: 95dvw;
   height: 4dvh;
   border: none;
   border-radius: 5px;
   background-color: var(--tertiary-color);
-  color: var(--text-color)
+  color: var(--text-color);
 }
 
-.container__background{
+.container__background {
   display: flex;
   justify-content: space-between;
 }
 
-.background__color {
+.background__color, .color__background, .color__text {
   width: 47dvw;
   height: 4dvh;
   border: none;
@@ -107,7 +107,7 @@ body {
   align-items: center;
 }
 
-.color__input {
+.color__input, .text__input, .background__input {
   background: none;
   border: none;
   height: 35px;
@@ -132,6 +132,62 @@ body {
 .filter__title {
   font-size: 15px;
   margin: 1% 0;
+}
+
+.settings__restoreBtn {
+  border: none;
+  background-color: var(--tertiary-color);
+  padding: 3%;
+  border-radius: 5px;
+  display: block;
+  margin: 3% auto;
+  color: var(--text-color);
+}
+
+.container__largeSelect {
+  border: none;
+  height: 4dvh;
+  width: 96dvw;
+  background-color: var(--tertiary-color);
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+.container__alignment {
+  display: flex;
+  justify-content: space-between;
+  margin: 1% 0;
+}
+
+.alignment__input {
+  width: 50dvw;
+
+}
+
+.alignment__button, .row__button {
+  border: none;
+  background-color: var(--tertiary-color);
+  padding: 2.5% 5%;
+  border-radius: 5px;
+  color: var(--text-color);
+}
+
+.container__row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.row__button {
+  padding: 2.5% 8%;
+}
+
+.container__checkbox {
+  margin: 1%;
+}
+
+.checkbox__text {
+  font-size: 14px;
+
 }
 
 /* slider */
@@ -159,19 +215,10 @@ input[type="range"]::-webkit-slider-thumb {
   width: 1rem;
 }
 
-.imageSettings__restoreBtn {
-  border: none;
-  background-color: var(--tertiary-color);
-  padding: 3%;
-  border-radius: 5px;
-  display: block;
-  margin: 3% auto;
-  color: var(--text-color);
-}
 
 
 /* nav bar */
-.memeSettings__navBar {
+.aside__navBar {
   width: 100dvw;
   height: 10dvh;
   display: flex;
@@ -189,3 +236,4 @@ input[type="range"]::-webkit-slider-thumb {
   width: 5dvh;
   background-color: var(--tertiary-color);
 }
+

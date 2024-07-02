@@ -15,17 +15,11 @@ darkModeBtn.addEventListener('click', function() {
     }
 });
 
-/* panel */ 
-const closeBtn = document.getElementById("closeBtn");
-
-closeBtn.addEventListener('click', function () {
-    panel.classList.add("hidden");
-})
 
 /* image btn */
 const imageBtn = document.getElementById("imageBtn");
 const panel = document.getElementById("panel");
-const panelImage = document.getElementById("panelImage");
+const panelImage = document.getElementById("imagePanel");
 
 
 imageBtn.addEventListener('click', function () {
@@ -33,5 +27,21 @@ imageBtn.addEventListener('click', function () {
     panelImage.classList.remove("hidden");
 });
 
+/* text btn */
+const textBtn = document.getElementById("textBtn");
+const panelText = document.getElementById("textPanel")
+
+textBtn.addEventListener('click', function () {
+    panel.classList.remove("hidden");
+    panelText.classList.remove("hidden");
+})
 
 
+/* panel */ 
+const closeBtn = document.getElementById("closeBtn");
+
+closeBtn.addEventListener('click', function () {
+    panel.classList.add("hidden");
+    panelImage.classList.add("hidden");
+    panelText.classList.add("hidden");
+})
