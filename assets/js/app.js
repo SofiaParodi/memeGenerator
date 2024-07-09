@@ -139,7 +139,6 @@ superiorTextCheckbox.addEventListener('input', () => {
 })
 
 
-
 /* inferior text */
 const inferiorText = document.getElementById("inferiorText");
 const inferiorTextInput = document.getElementById("inferiorTextInput");
@@ -147,7 +146,7 @@ const inferiorTextCheckbox = document.getElementById("inferiorTextCheckbox")
 
 inferiorTextInput.addEventListener('input', (e) => {
     inferiorText.innerText = e.target.value;
-})
+});
 
 inferiorTextCheckbox.addEventListener('input', () => {
     if (inferiorTextCheckbox.checked) {
@@ -155,4 +154,21 @@ inferiorTextCheckbox.addEventListener('input', () => {
     } else {
         inferiorText.classList.remove('hidden');
     }
+});
+
+/* font family */
+const fontSelect = document.getElementById("fontSelect");
+
+fontSelect.addEventListener('input', (e) => {
+    superiorText.style.fontFamily = fontSelect.value;
+    inferiorText.style.fontFamily = fontSelect.value;
 })
+
+/* font size */
+const fontSizeInput = document.getElementById("fontSizeInput");
+
+fontSizeInput.addEventListener('input', (e) => {
+    superiorText.style.fontSize = `${e.target.value}px`;
+    inferiorText.style.fontSize = `${e.target.value}px`;
+})
+
