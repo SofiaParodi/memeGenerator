@@ -119,3 +119,40 @@ backgroundColor.addEventListener('input', (e) => {
     imageMeme.style.backgroundColor = e.target.value;
     hexaColor.innerText = e.target.value;
 })
+
+
+/* superior text */
+const superiorText = document.getElementById("superiorText");
+const superiorTextInput = document.getElementById("superiorTextInput");
+const superiorTextCheckbox = document.getElementById("superiorTextCheckbox");
+
+superiorTextInput.addEventListener('input', (e) => {
+    superiorText.innerText = e.target.value;
+})
+
+superiorTextCheckbox.addEventListener('input', () => {
+    if (superiorTextCheckbox.checked) {
+    superiorText.classList.add('hidden');
+    } else {
+        superiorText.classList.remove('hidden');
+    }
+})
+
+
+
+/* inferior text */
+const inferiorText = document.getElementById("inferiorText");
+const inferiorTextInput = document.getElementById("inferiorTextInput");
+const inferiorTextCheckbox = document.getElementById("inferiorTextCheckbox")
+
+inferiorTextInput.addEventListener('input', (e) => {
+    inferiorText.innerText = e.target.value;
+})
+
+inferiorTextCheckbox.addEventListener('input', () => {
+    if (inferiorTextCheckbox.checked) {
+    inferiorText.classList.add('hidden');
+    } else {
+        inferiorText.classList.remove('hidden');
+    }
+})

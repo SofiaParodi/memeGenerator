@@ -23,9 +23,9 @@
 
     <main>
       <div class="main__meme">
-        <p class="meme__superiorText">Texto</p>
+        <p class="meme__superiorText" id="superiorText">Texto</p>
         <div class="meme__image" id="imageMeme"></div>
-        <p class="meme__inferiorText">Texto</p>
+        <p class="meme__inferiorText"  id="inferiorText">Texto</p>
       </div>
     </main>
 
@@ -178,20 +178,20 @@
 
         <div class="settings__container">
           <h3 class="container__title">Superior</h3>
-          <input type="text" class="container__inputText" />
+          <input type="text" class="container__inputText" id="superiorTextInput" />
 
           <div class="container__checkbox">
-            <input type="checkbox" name="" id="" class="checkbox__input" />
+            <input type="checkbox" id="superiorTextCheckbox" class="checkbox__input" />
             <label for="" class="checkbox__text">Sin texto superior</label>
           </div>
         </div>
 
         <div class="settings__container">
           <h3 class="container__title">Inferior</h3>
-          <input type="text" class="container__inputText" />
+          <input type="text" class="container__inputText" id="inferiorTextInput" />
 
           <div class="container__checkbox">
-            <input type="checkbox" name="" id="" class="checkbox__input" />
+            <input type="checkbox" id="inferiorTextCheckbox" class="checkbox__input" />
             <label for="" class="checkbox__text">Sin texto inferior</label>
           </div>
         </div>
