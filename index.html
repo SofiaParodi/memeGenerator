@@ -24,7 +24,7 @@
     <main>
       <div class="main__meme">
         <p class="meme__superiorText">Texto</p>
-        <div class="meme__image"></div>
+        <div class="meme__image" id="imageMeme"></div>
         <p class="meme__inferiorText">Texto</p>
       </div>
     </main>
@@ -39,27 +39,32 @@
 
         <div class="settings__container">
           <h3 class="container__title">URL</h3>
-          <input type="text" class="container__inputText"/>
+          <input type="text" class="container__inputText" id="imageInput" />
         </div>
 
         <div class="settings__container">
           <h3 class="container__title">Fondo</h3>
 
-
           <div class="container__background">
-          <div class="background__color">
-          <input type="color" name="background" id="" class="color__input" value="#FFFFFF"/>
-          <span class="color__hexa">#FFFFFF</span>
-        </div>
-          <select name="blendingModes" id="" class="background__select">
-            <option value="">Ninguno</option>
-            <option value="">Aclarar</option>
-            <option value="">Oscurecer</option>
-            <option value="">Diferencia</option>
-            <option value="">Luminosidad</option>
-            <option value="">Multiplicar</option>
-          </select>
-        </div>
+            <div class="background__color">
+              <input
+                type="color"
+                name="background"
+                id=""
+                class="color__input"
+                value="#FFFFFF"
+              />
+              <span class="color__hexa">#FFFFFF</span>
+            </div>
+            <select name="blendingModes" id="" class="background__select">
+              <option value="">Ninguno</option>
+              <option value="">Aclarar</option>
+              <option value="">Oscurecer</option>
+              <option value="">Diferencia</option>
+              <option value="">Luminosidad</option>
+              <option value="">Multiplicar</option>
+            </select>
+          </div>
         </div>
 
         <div class="settings__container">
@@ -67,39 +72,97 @@
 
           <div class="container__filter">
             <label for="brightness" class="filter__title">Brillo</label>
-            <input type="range" name="" id="" class="filter__range"/>
+            <input
+              type="range"
+              id="brightness"
+              class="filter__range"
+              min="0"
+              max="1"
+              step="0.1"
+              value="1"
+            />
           </div>
           <div class="container__filter">
             <label for="opacity" class="filter__title">Opacidad</label>
-            <input type="range" name="" id="" />
+            <input
+              type="range"
+              id="opacity"
+              min="0"
+              max="1"
+              step="0.1"
+              value="1"
+            />
           </div>
           <div class="container__filter">
             <label for="contrast" class="filter__title">Contraste</label>
-            <input type="range" name="" id="" />
+            <input
+              type="range"
+              id="contrast"
+              min="100"
+              max="1000"
+              step="1"
+              value="100"
+            />
           </div>
           <div class="container__filter">
             <label for="blur" class="filter__title">Desenfoque</label>
-            <input type="range" name="" id="" />
+            <input type="range" id="blur" min="0" max="10" step="1" value="0" />
           </div>
           <div class="container__filter">
-            <label for="grayscale" class="filter__title">Escala de Grises</label>
-            <input type="range" name="" id="" />
+            <label for="grayscale" class="filter__title">
+              Escala de Grises
+            </label>
+            <input
+              type="range"
+              id="grayscale"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
           </div>
           <div class="container__filter">
             <label for="sepia" class="filter__title">Sepia</label>
-            <input type="range" name="" id="" />
+            <input
+              type="range"
+              id="sepia"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
           </div>
           <div class="container__filter">
             <label for="hue" class="filter__title">HUE</label>
-            <input type="range" name="" id="" />
+            <input 
+            type="range"
+            id="hue"
+            min="0"
+            max="359"
+            step="1"
+            value="0"/>
           </div>
           <div class="container__filter">
             <label for="saturation" class="filter__title">Saturación</label>
-            <input type="range" name="" id="" />
+            <input
+              type="range"
+              id="saturation"
+              min="100"
+              max="1000"
+              step="10"
+              value="100"
+            />
           </div>
           <div class="container__filter">
             <label for="negative" class="filter__title">Negativo</label>
-            <input type="range" name="" id="" />
+            <input
+              type="range"
+              id="negative"
+              min="0"
+              max="1"
+              step="0.1"
+              value="0"
+            />
           </div>
         </div>
 
@@ -115,100 +178,111 @@
 
         <div class="settings__container">
           <h3 class="container__title">Superior</h3>
-          <input type="text" class="container__inputText"/>
+          <input type="text" class="container__inputText" />
 
           <div class="container__checkbox">
-          <input type="checkbox" name="" id="" class="checkbox__input">
-          <label for="" class="checkbox__text">Sin texto superior</label>
+            <input type="checkbox" name="" id="" class="checkbox__input" />
+            <label for="" class="checkbox__text">Sin texto superior</label>
+          </div>
         </div>
-      </div>
 
-      <div class="settings__container">
-        <h3 class="container__title">Inferior</h3>
-        <input type="text" class="container__inputText"/>
+        <div class="settings__container">
+          <h3 class="container__title">Inferior</h3>
+          <input type="text" class="container__inputText" />
 
-        <div class="container__checkbox">
-        <input type="checkbox" name="" id="" class="checkbox__input"> 
-        <label for="" class="checkbox__text">Sin texto inferior</label>
-      </div>
-    </div>
-
-    <div class="settings__container">
-      <h3 class="container__title">Fuente</h3>
-      <select name="" id="" class="container__largeSelect">
-        <option value="">Arial</option>
-        <option value="">Arial Black</option>
-        <option value="">American Typewriter</option>
-        <option value="">Andale Mono</option>
-        <option value="">Comic Sans MS</option>
-        <option value="">Helvetica</option>
-        <option value="">Impact</option>
-        <option value="">Verdana</option>
-        <option value="">Times New Roman</option>
-      </select>
-      <div class="container__alignment">
-        <input type="text" name="" id="" class="alignment__input">
-        <button class="alignment__button">
-          <i class="fa-solid fa-align-left"></i>
-        </button>
-        <button class="alignment__button">
-          <i class="fa-solid fa-align-center"></i>
-        </button>
-        <button class="alignment__button">
-          <i class="fa-solid fa-align-right"></i>
-        </button>
-      </div>
-    </div>
-
-     <div class="settings__container">
-      <div class="container__row">
-      <div class="row__color">
-        <h3 class="color__title">Color</h3>
-        <div class="color__text">
-          <input type="color" name="background" id="" class="text__input" value="#FFFFFF"/>
-          <span class="text__hexa">#FFFFFF</span>
+          <div class="container__checkbox">
+            <input type="checkbox" name="" id="" class="checkbox__input" />
+            <label for="" class="checkbox__text">Sin texto inferior</label>
+          </div>
         </div>
-      </div>
 
-      <div class="row__color">
-        <h3 class="color__title">Fondo</h3>
-        <div class="color__background">
-          <input type="color" name="background" id="" class="background__input" value="#FFFFFF"/>
-          <span class="background__hexa">#FFFFFF</span>
+        <div class="settings__container">
+          <h3 class="container__title">Fuente</h3>
+          <select name="" id="" class="container__largeSelect">
+            <option value="">Arial</option>
+            <option value="">Arial Black</option>
+            <option value="">American Typewriter</option>
+            <option value="">Andale Mono</option>
+            <option value="">Comic Sans MS</option>
+            <option value="">Helvetica</option>
+            <option value="">Impact</option>
+            <option value="">Verdana</option>
+            <option value="">Times New Roman</option>
+          </select>
+          <div class="container__alignment">
+            <input type="text" name="" id="" class="alignment__input" />
+            <button class="alignment__button">
+              <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button class="alignment__button">
+              <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button class="alignment__button">
+              <i class="fa-solid fa-align-right"></i>
+            </button>
+          </div>
         </div>
-      </div>
-      </div>
 
-      <div class="container__checkbox">
-      <input type="checkbox" name="" id="" class="checkbox__input">
-      <label for="" class="checkbox__text">Fondo transparente</label>     
-     </div>
-    </div>
+        <div class="settings__container">
+          <div class="container__row">
+            <div class="row__color">
+              <h3 class="color__title">Color</h3>
+              <div class="color__text">
+                <input
+                  type="color"
+                  name="background"
+                  id=""
+                  class="text__input"
+                  value="#FFFFFF"
+                />
+                <span class="text__hexa">#FFFFFF</span>
+              </div>
+            </div>
 
-    <div class="settings__container">
-      <h3 class="container__title">Contorno</h3>
-      <div class="container__row">
-        <button class="row__button">Ninguno</button>
-        <button class="row__button">Claro</button>
-        <button class="row__button">Oscuro</button>
-      </div>
+            <div class="row__color">
+              <h3 class="color__title">Fondo</h3>
+              <div class="color__background">
+                <input
+                  type="color"
+                  name="background"
+                  id=""
+                  class="background__input"
+                  value="#FFFFFF"
+                />
+                <span class="background__hexa">#FFFFFF</span>
+              </div>
+            </div>
+          </div>
 
-    </div>
+          <div class="container__checkbox">
+            <input type="checkbox" name="" id="" class="checkbox__input" />
+            <label for="" class="checkbox__text">Fondo transparente</label>
+          </div>
+        </div>
 
-    <div class="settings__container">
-      <h3 class="container__title">Espaciado</h3>
-      <input type="text" class="container__inputText"/>
-      </div>
-      <div class="settings__container">
-        <h3 class="container__title">Interlineado</h3>
-        <select name="" id="" class="container__largeSelect">
-          <option value="">0.8</option>
-          <option value="">1</option>
-          <option value="">1.2</option>
-          <option value="">1.5</option>
-          <option value="">2</option>
-          <option value="">2.5</option>
-        </select>
+        <div class="settings__container">
+          <h3 class="container__title">Contorno</h3>
+          <div class="container__row">
+            <button class="row__button">Ninguno</button>
+            <button class="row__button">Claro</button>
+            <button class="row__button">Oscuro</button>
+          </div>
+        </div>
+
+        <div class="settings__container">
+          <h3 class="container__title">Espaciado</h3>
+          <input type="text" class="container__inputText" />
+        </div>
+        <div class="settings__container">
+          <h3 class="container__title">Interlineado</h3>
+          <select name="" id="" class="container__largeSelect">
+            <option value="">0.8</option>
+            <option value="">1</option>
+            <option value="">1.2</option>
+            <option value="">1.5</option>
+            <option value="">2</option>
+            <option value="">2.5</option>
+          </select>
         </div>
       </section>
     </aside>

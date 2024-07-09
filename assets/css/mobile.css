@@ -59,6 +59,8 @@ body {
   background-color: black;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -85,7 +87,6 @@ body {
   font-size: 20px;
 }
 
-/* panel */
 .settings__title { 
   text-align: center;
 }
