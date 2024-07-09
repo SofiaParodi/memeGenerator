@@ -93,3 +93,20 @@ sepia.addEventListener('input', updateFilters);
 hue.addEventListener('input', updateFilters);
 saturation.addEventListener('input', updateFilters);
 negative.addEventListener('input', updateFilters);
+
+/* restore btn */
+const restoreBtn = document.getElementById("restoreBtn");
+
+restoreBtn.addEventListener('click', () => {
+    brightness.value = 1;
+    opacity.value = 1;
+    contrast.value = 100;
+    blurInput.value = 0;
+    grayscale.value = 0;
+    sepia.value = 0;
+    hue.value = 0;
+    saturation.value = 100;
+    negative.value = 0;
+
+    updateFilters();
+})
