@@ -172,3 +172,22 @@ fontSizeInput.addEventListener('input', (e) => {
     inferiorText.style.fontSize = `${e.target.value}px`;
 })
 
+/* alignment */
+const alignLeft = document.getElementById("alignLeft");
+const alignCenter = document.getElementById("alignCenter");
+const alignRight = document.getElementById("alignRight");
+
+alignLeft.addEventListener('click', () => {
+    superiorText.style.textAlign = 'left'
+    inferiorText.style.textAlign = 'left'
+})
+
+alignCenter.addEventListener('click', () => {
+    superiorText.style.textAlign = 'center'
+    inferiorText.style.textAlign = 'center'
+})
+
+alignRight.addEventListener('click', () => {
+    superiorText.style.textAlign = 'right'
+    inferiorText.style.textAlign = 'right'
+})
