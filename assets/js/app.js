@@ -110,3 +110,12 @@ restoreBtn.addEventListener('click', () => {
 
     updateFilters();
 })
+
+/* color background */
+const backgroundColor = document.getElementById("backgroundColor");
+const hexaColor = document.getElementById("hexaColor");
+
+backgroundColor.addEventListener('input', (e) => {
+    imageMeme.style.backgroundColor = e.target.value;
+    hexaColor.innerText = e.target.value;
+})
