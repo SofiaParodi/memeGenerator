@@ -43,16 +43,23 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  position: relative;
+  border: none;
 }
 
 .meme__superiorText, .meme__inferiorText {
-  width: 100%;
+  width: 90dvw;
   padding: 4% 0;
   margin: 0;
   background-color: white;
   color: black;
   text-align: center;
   font-size: 22px;
+  position: absolute;
+}
+
+.meme__inferiorText {
+  bottom: 0;
 }
 
 .meme__image {

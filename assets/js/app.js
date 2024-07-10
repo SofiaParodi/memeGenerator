@@ -191,3 +191,39 @@ alignRight.addEventListener('click', () => {
     superiorText.style.textAlign = 'right'
     inferiorText.style.textAlign = 'right'
 })
+
+/* text color */
+const textColor = document.getElementById("textColor");
+const textColorHexa = document.getElementById("textColorHexa");
+
+textColor.addEventListener('input', (e) => {
+    superiorText.style.color = e.target.value;
+    inferiorText.style.color = e.target.value;
+    textColorHexa.innerText = e.target.value;
+})
+
+/* text background color */
+const textBackgroundColor = document.getElementById("textBackgroundColor");
+const textBackgroundColorHexa = document.getElementById("textBackgroundColorHexa");
+
+textBackgroundColor.addEventListener('input', (e) => {
+    superiorText.style.backgroundColor = e.target.value;
+    inferiorText.style.backgroundColor = e.target.value;
+    textBackgroundColorHexa.innerText = e.target.value;
+})
+
+/* transparent background */
+const transparentBackgroundCheckbox = document.getElementById("transparentBackgroundCheckbox");
+const mainMeme = document.getElementById("mainMeme");
+
+transparentBackgroundCheckbox.addEventListener('input', () => {
+    if (transparentBackgroundCheckbox.checked) {
+    mainMeme.style.backgroundColor = 'transparent';
+    superiorText.style.backgroundColor = 'transparent';
+    inferiorText.style.backgroundColor = 'transparent';
+    } else {
+        mainMeme.style.backgroundColor = textBackgroundColor.value;
+        superiorText.style.backgroundColor = textBackgroundColor.value;
+        inferiorText.style.backgroundColor = textBackgroundColor.value;
+    }
+});

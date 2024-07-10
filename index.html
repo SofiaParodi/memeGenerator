@@ -22,7 +22,7 @@
     </header>
 
     <main>
-      <div class="main__meme">
+      <div class="main__meme" id="mainMeme">
         <p class="meme__superiorText" id="superiorText">Texto</p>
         <div class="meme__image" id="imageMeme"></div>
         <p class="meme__inferiorText"  id="inferiorText">Texto</p>
@@ -230,12 +230,11 @@
               <div class="color__text">
                 <input
                   type="color"
-                  name="background"
-                  id=""
+                  id="textColor"
                   class="text__input"
-                  value="#FFFFFF"
+                  value="#000000"
                 />
-                <span class="text__hexa">#FFFFFF</span>
+                <span class="text__hexa" id="textColorHexa">#000000</span>
               </div>
             </div>
 
@@ -244,18 +243,17 @@
               <div class="color__background">
                 <input
                   type="color"
-                  name="background"
-                  id=""
+                  id="textBackgroundColor"
                   class="background__input"
                   value="#FFFFFF"
                 />
-                <span class="background__hexa">#FFFFFF</span>
+                <span class="background__hexa" id="textBackgroundColorHexa">#FFFFFF</span>
               </div>
             </div>
           </div>
 
           <div class="container__checkbox">
-            <input type="checkbox" name="" id="" class="checkbox__input" />
+            <input type="checkbox" id="transparentBackgroundCheckbox" class="checkbox__input" />
             <label for="" class="checkbox__text">Fondo transparente</label>
           </div>
         </div>

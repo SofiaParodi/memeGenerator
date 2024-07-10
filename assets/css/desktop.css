@@ -55,6 +55,18 @@ body {
 }
 
 /* panel content */
-.container__inputText {
+.container__inputText, .container__largeSelect {
     width: 24dvw;
+}
+
+.color__text, .color__background {
+  width: 11.8dvw;
+}
+
+.container__checkbox {
+  margin: 0;
+}
+
+.alignment__button {
+  padding: 2% 5%;
 }
