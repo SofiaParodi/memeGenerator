@@ -227,3 +227,27 @@ transparentBackgroundCheckbox.addEventListener('input', () => {
         inferiorText.style.backgroundColor = textBackgroundColor.value;
     }
 });
+
+/* text outline */
+const noOutline = document.getElementById("noOutline");
+const whiteOutline = document.getElementById("whiteOutline");
+const blackOutline = document.getElementById("blackOutline");
+
+
+noOutline.addEventListener('click', () => {
+    superiorText.style.textShadow = "none";
+    inferiorText.style.textShadow = "none";
+
+})
+
+whiteOutline.addEventListener('click', () => {
+    superiorText.style.textShadow = "white 2px 2px, white -2px 2px, white 2px -2px, white -2px -2px";
+    inferiorText.style.textShadow = "white 2px 2px, white -2px 2px, white 2px -2px, white -2px -2px";
+
+})
+
+blackOutline.addEventListener('click', () => {
+    superiorText.style.textShadow = "black 2px 2px, black -2px 2px, black 2px -2px, black -2px -2px";
+    inferiorText.style.textShadow = "black 2px 2px, black -2px 2px, black 2px -2px, black -2px -2px";
+
+})
