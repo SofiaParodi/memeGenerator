@@ -57,6 +57,23 @@ imageInput.addEventListener('input', (e) => {
     
 });
 
+/* image color background */
+const backgroundColor = document.getElementById("backgroundColor");
+const hexaColor = document.getElementById("hexaColor");
+
+backgroundColor.addEventListener('input', (e) => {
+    imageMeme.style.backgroundColor = e.target.value;
+    hexaColor.innerText = e.target.value;
+})
+
+/* blend mode */
+const blendingModeSelect = document.getElementById("blendingModeSelect");
+
+blendingModeSelect.addEventListener('input', (e) => {
+    imageMeme.style.mixBlendMode = e.target.value;
+})
+
+
 /* filters */
 const brightness = document.getElementById("brightness");
 const opacity = document.getElementById("opacity");
@@ -110,16 +127,6 @@ restoreBtn.addEventListener('click', () => {
 
     updateFilters();
 })
-
-/* color background */
-const backgroundColor = document.getElementById("backgroundColor");
-const hexaColor = document.getElementById("hexaColor");
-
-backgroundColor.addEventListener('input', (e) => {
-    imageMeme.style.backgroundColor = e.target.value;
-    hexaColor.innerText = e.target.value;
-})
-
 
 /* superior text */
 const superiorText = document.getElementById("superiorText");
@@ -250,4 +257,22 @@ blackOutline.addEventListener('click', () => {
     superiorText.style.textShadow = "black 2px 2px, black -2px 2px, black 2px -2px, black -2px -2px";
     inferiorText.style.textShadow = "black 2px 2px, black -2px 2px, black 2px -2px, black -2px -2px";
 
+})
+
+/* spacing */
+const spacing = document.getElementById("spacing");
+
+spacing.addEventListener('input', (e) => {
+    superiorText.style.padding = `${e.target.value}px 0px`
+    inferiorText.style.padding = `${e.target.value}px 0px`
+})
+
+
+/* line spacing */
+
+const lineSpacing = document.getElementById("lineSpacing");
+
+lineSpacing.addEventListener('input', (e) => {
+    superiorText.style.lineHeight = e.target.value;
+    inferiorText.style.lineHeight = e.target.value;
 })

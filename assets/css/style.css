@@ -11,10 +11,11 @@
 
 /* general settings */
 :root {
-    --primary-color: #ececec;
-    --secondary-color: #fafafa;
-    --tertiary-color: #e0e0e0;
-    --text-color: #555555;
+    --primary-color: #d7cbe6;
+    --secondary-color: #bfafd0;
+    --tertiary-color: #ddd4e7;
+    --text-color: #8e84a5;
+    --header-desktop-color: #b1a4c4;
     --font: 'arial', sans-serif;
     
 }
@@ -23,6 +24,7 @@
     --primary-color: #423a53;
     --secondary-color: #352F44;
     --tertiary-color: #5a5070;
+    --header-desktop-color: #272231;
     --text-color: #B9B4C7;
 }
 

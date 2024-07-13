@@ -11,6 +11,7 @@ body {
   position: absolute;
   top: 0;
   z-index: 1;
+  background-color: var(--header-desktop-color);
 }
 
 .header__button {
@@ -21,11 +22,17 @@ body {
   width: 17dvh;
 }
 
+
+
 /* meme */
 
 .main__meme {
-  width: 30dvw;
+  width: 35dvw;
   height: 65dvh;
+}
+
+.meme__superiorText, .meme__inferiorText { 
+  width: 35dvw;
 }
 
 /* aside */

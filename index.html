@@ -56,13 +56,13 @@
               />
               <span class="color__hexa" id="hexaColor">#FFFFFF</span>
             </div>
-            <select name="blendingModes" id="" class="background__select">
-              <option value="">Ninguno</option>
-              <option value="">Aclarar</option>
-              <option value="">Oscurecer</option>
-              <option value="">Diferencia</option>
-              <option value="">Luminosidad</option>
-              <option value="">Multiplicar</option>
+            <select name="blendingModes" id="blendingModeSelect" class="background__select">
+              <option value="normal">Ninguno</option>
+              <option value="lighten">Aclarar</option>
+              <option value="darken">Oscurecer</option>
+              <option value="difference">Diferencia</option>
+              <option value="luminosity">Luminosidad</option>
+              <option value="multiply">Multiplicar</option>
             </select>
           </div>
         </div>
@@ -269,17 +269,18 @@
 
         <div class="settings__container">
           <h3 class="container__title">Espaciado</h3>
-          <input type="text" class="container__inputText" />
+          <input type="number" id="spacing" class="container__inputText" 
+          value="20" min="10" max="50"/>
         </div>
         <div class="settings__container">
           <h3 class="container__title">Interlineado</h3>
-          <select name="" id="" class="container__largeSelect">
-            <option value="">0.8</option>
-            <option value="">1</option>
-            <option value="">1.2</option>
-            <option value="">1.5</option>
-            <option value="">2</option>
-            <option value="">2.5</option>
+          <select id="lineSpacing" class="container__largeSelect">
+            <option value="0.8">0.8</option>
+            <option value="1">1</option>
+            <option value="1.2">1.2</option>
+            <option value="1.5">1.5</option>
+            <option value="2">2</option>
+            <option value="2.5">2.5</option>
           </select>
         </div>
       </section>

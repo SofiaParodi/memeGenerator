@@ -37,7 +37,7 @@ body {
 
 .main__meme {
   background-color: var(--secondary-color);
-  height: 40dvh;
+  height: 50dvh;
   width: 90dvw;
   display: flex;
   flex-direction: column;
@@ -49,13 +49,17 @@ body {
 
 .meme__superiorText, .meme__inferiorText {
   width: 90dvw;
-  padding: 4% 0;
+  padding: 20px 0;
   margin: 0;
   background-color: white;
   color: black;
   text-align: center;
   font-size: 22px;
   position: absolute;
+}
+
+.meme__superiorText {
+  z-index: 1;
 }
 
 .meme__inferiorText {
@@ -68,6 +72,7 @@ body {
   height: 100%;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 
@@ -79,6 +84,7 @@ body {
   background-color: var(--primary-color);
   display: flex;
   flex-direction: column;
+  z-index: 2;
 }
 
 .panel__closeBtn {
