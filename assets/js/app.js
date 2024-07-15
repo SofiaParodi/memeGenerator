@@ -54,6 +54,8 @@ const imageContainer = document.getElementById("imageContainer");
 imageInput.addEventListener('input', (e) => {
     let imageUrl = e.target.value;
     let imageMeme = document.createElement("img");
+    
+    imageContainer.innerHTML = '';
     imageMeme.setAttribute('src', imageUrl);
     imageMeme.classList.add("container__image")
     imageContainer.append(imageMeme);
@@ -282,9 +284,11 @@ lineSpacing.addEventListener('input', (e) => {
 /* download btn */
 const downloadBtn = document.getElementById("downloadBtn");
 
-downloadBtn.addEventListener('click', () => {
+function downloadMeme() {
     domtoimage.toBlob(meme).then(function (blob) {
         saveAs(blob, 'meme.png')
     }
     )
-})
+}
+
+downloadBtn.addEventListener('click', downloadMeme);
