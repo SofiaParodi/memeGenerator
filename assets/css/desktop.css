@@ -70,6 +70,7 @@ body {
 }
 
 .color__text, .color__background {
+  width: 12.3dvw;
   height: 4dvh;
 }
 
@@ -82,12 +83,12 @@ body {
 }
 
 .alignment__input {
-
+  width: 13dvw;
   height: 4dvh;
 }
 
 .background__color, .background__select {
-  width: 12dvw;
+  width: 12.3dvw;
   height: 4dvh;
 }
 
