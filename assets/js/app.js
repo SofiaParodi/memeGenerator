@@ -50,11 +50,12 @@ closeBtn.addEventListener('click', ()  => {
 /* meme */
 const imageInput = document.getElementById("imageInput");
 const imageContainer = document.getElementById("imageContainer");
+let imageMeme
 
 imageInput.addEventListener('input', (e) => {
     let imageUrl = e.target.value;
-    let imageMeme = document.createElement("img");
-    
+    imageMeme = document.createElement("img");
+
     imageContainer.innerHTML = '';
     imageMeme.setAttribute('src', imageUrl);
     imageMeme.classList.add("container__image")
@@ -66,7 +67,7 @@ const backgroundColor = document.getElementById("backgroundColor");
 const hexaColor = document.getElementById("hexaColor");
 
 backgroundColor.addEventListener('input', (e) => {
-    imageMeme.style.backgroundColor = e.target.value;
+    imageContainer.style.backgroundColor = e.target.value;
     hexaColor.innerText = e.target.value;
 })
 

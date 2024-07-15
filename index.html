@@ -3,20 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="title" content="Generador de Memes" />
+    <meta
+      name="description"
+      content="Personaliza imágenes con texto, fondos y colores en este generador de memes! :)"
+    />
+    <meta
+      name="keywords"
+      content="Generador de memes, meme, generador, imágen, edición, edición de imágenes, filtros, colores, color, filtro, descarga imagenes, descarga"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Spanish" />
     <title>Generador de memes</title>
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <!-- dom to image -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
-        integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+      integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+      crossorigin="anonymous"
+    ></script>
 
     <!-- file saver -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
-        integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.0/FileSaver.min.js"
+      integrity="sha512-csNcFYJniKjJxRWRV1R7fvnXrycHP6qDR21mgz1ZP55xY5d+aHLfo9/FcGDQLfn2IfngbAHd8LdfsagcCqgTcQ=="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body id="body">
     <header class="header">
@@ -34,9 +49,8 @@
     <main>
       <div class="main__meme" id="meme">
         <h2 class="meme__superiorText" id="superiorText">Texto</h2>
-        <div class="meme__container" id="imageContainer">
-        </div>
-        <h2 class="meme__inferiorText"  id="inferiorText">Texto</h2>
+        <div class="meme__container" id="imageContainer"></div>
+        <h2 class="meme__inferiorText" id="inferiorText">Texto</h2>
       </div>
     </main>
 
@@ -67,7 +81,11 @@
               />
               <span class="color__hexa" id="hexaColor">#FFFFFF</span>
             </div>
-            <select name="blendingModes" id="blendingModeSelect" class="background__select">
+            <select
+              name="blendingModes"
+              id="blendingModeSelect"
+              class="background__select"
+            >
               <option value="normal">Ninguno</option>
               <option value="lighten">Aclarar</option>
               <option value="darken">Oscurecer</option>
@@ -145,13 +163,7 @@
           </div>
           <div class="container__filter">
             <label for="hue" class="filter__title">HUE</label>
-            <input 
-            type="range"
-            id="hue"
-            min="0"
-            max="359"
-            step="1"
-            value="0"/>
+            <input type="range" id="hue" min="0" max="359" step="1" value="0" />
           </div>
           <div class="container__filter">
             <label for="saturation" class="filter__title">Saturación</label>
@@ -189,20 +201,36 @@
 
         <div class="settings__container">
           <h3 class="container__title">Superior</h3>
-          <input type="text" class="container__inputText" id="superiorTextInput" />
+          <input
+            type="text"
+            class="container__inputText"
+            id="superiorTextInput"
+          />
 
           <div class="container__checkbox">
-            <input type="checkbox" id="superiorTextCheckbox" class="checkbox__input" />
+            <input
+              type="checkbox"
+              id="superiorTextCheckbox"
+              class="checkbox__input"
+            />
             <label for="" class="checkbox__text">Sin texto superior</label>
           </div>
         </div>
 
         <div class="settings__container">
           <h3 class="container__title">Inferior</h3>
-          <input type="text" class="container__inputText" id="inferiorTextInput" />
+          <input
+            type="text"
+            class="container__inputText"
+            id="inferiorTextInput"
+          />
 
           <div class="container__checkbox">
-            <input type="checkbox" id="inferiorTextCheckbox" class="checkbox__input" />
+            <input
+              type="checkbox"
+              id="inferiorTextCheckbox"
+              class="checkbox__input"
+            />
             <label for="" class="checkbox__text">Sin texto inferior</label>
           </div>
         </div>
@@ -212,7 +240,9 @@
           <select name="" id="fontSelect" class="container__largeSelect">
             <option value="'arial', sans-serif">Arial</option>
             <option value="'arial black', sans-serif">Arial Black</option>
-            <option value="'american typewriter', serif">American Typewriter</option>
+            <option value="'american typewriter', serif">
+              American Typewriter
+            </option>
             <option value="'andale mono', sans-serif">Andale Mono</option>
             <option value="'comic sans ms', sans-serif">Comic Sans MS</option>
             <option value="'helvetica', sans-serif">Helvetica</option>
@@ -221,7 +251,12 @@
             <option value="'times new roman', serif">Times New Roman</option>
           </select>
           <div class="container__alignment">
-            <input type="number" id="fontSizeInput" class="alignment__input" value="22"/>
+            <input
+              type="number"
+              id="fontSizeInput"
+              class="alignment__input"
+              value="22"
+            />
             <button class="alignment__button" id="alignLeft">
               <i class="fa-solid fa-align-left"></i>
             </button>
@@ -258,13 +293,19 @@
                   class="background__input"
                   value="#FFFFFF"
                 />
-                <span class="background__hexa" id="textBackgroundColorHexa">#FFFFFF</span>
+                <span class="background__hexa" id="textBackgroundColorHexa"
+                  >#FFFFFF</span
+                >
               </div>
             </div>
           </div>
 
           <div class="container__checkbox">
-            <input type="checkbox" id="transparentBackgroundCheckbox" class="checkbox__input" />
+            <input
+              type="checkbox"
+              id="transparentBackgroundCheckbox"
+              class="checkbox__input"
+            />
             <label for="" class="checkbox__text">Fondo transparente</label>
           </div>
         </div>
@@ -280,8 +321,14 @@
 
         <div class="settings__container">
           <h3 class="container__title">Espaciado</h3>
-          <input type="number" id="spacing" class="container__inputText" 
-          value="20" min="10" max="50"/>
+          <input
+            type="number"
+            id="spacing"
+            class="container__inputText"
+            value="20"
+            min="10"
+            max="50"
+          />
         </div>
         <div class="settings__container">
           <h3 class="container__title">Interlineado</h3>
