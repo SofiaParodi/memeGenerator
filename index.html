@@ -1,23 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="title" content="Generador de Memes" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Generador de Memes">
     <meta
       name="description"
-      content="Personaliza imágenes con texto, fondos y colores en este generador de memes! :)"
-    />
+      content="Personaliza imágenes con texto, fondos y colores en este generador de memes! :)">
     <meta
       name="keywords"
-      content="Generador de memes, meme, generador, imágen, edición, edición de imágenes, filtros, colores, color, filtro, descarga imagenes, descarga"
-    />
-    <meta name="robots" content="index, follow" />
-    <meta name="language" content="Spanish" />
+      content="Generador de memes, meme, generador, imágen, edición, edición de imágenes, filtros, colores, color, filtro, descarga imagenes, descarga">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Spanish">
     <title>Generador de memes</title>
 
     <!-- stylesheet -->
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css">
 
     <!-- dom to image -->
     <script
@@ -39,7 +37,7 @@
         <i id="darkModeIcon" class="fa-solid fa-sun button__icon"></i>
       </button>
 
-      <img src="/assets/img/Logo.png" class="header__logo" />
+      <img src="/assets/img/Logo.png" alt="Generador de Memes" class="header__logo" loading="lazy" >
 
       <button class="header__button" id="downloadBtn">
         <i class="fa-solid fa-download button__icon"></i>
@@ -64,7 +62,7 @@
 
         <div class="settings__container">
           <h3 class="container__title">URL</h3>
-          <input type="text" class="container__inputText" id="imageInput" />
+          <input type="text" class="container__inputText" id="imageInput">
         </div>
 
         <div class="settings__container">
@@ -77,8 +75,7 @@
                 name="background"
                 id="backgroundColor"
                 class="color__input"
-                value="#FFFFFF"
-              />
+                value="#FFFFFF">
               <span class="color__hexa" id="hexaColor">#FFFFFF</span>
             </div>
             <select
@@ -108,8 +105,7 @@
               min="0"
               max="1"
               step="0.1"
-              value="1"
-            />
+              value="1">
           </div>
           <div class="container__filter">
             <label for="opacity" class="filter__title">Opacidad</label>
@@ -119,8 +115,7 @@
               min="0"
               max="1"
               step="0.1"
-              value="1"
-            />
+              value="1">
           </div>
           <div class="container__filter">
             <label for="contrast" class="filter__title">Contraste</label>
@@ -130,12 +125,11 @@
               min="100"
               max="1000"
               step="1"
-              value="100"
-            />
+              value="100">
           </div>
           <div class="container__filter">
             <label for="blur" class="filter__title">Desenfoque</label>
-            <input type="range" id="blur" min="0" max="10" step="1" value="0" />
+            <input type="range" id="blur" min="0" max="10" step="1" value="0">
           </div>
           <div class="container__filter">
             <label for="grayscale" class="filter__title">
@@ -147,8 +141,7 @@
               min="0"
               max="100"
               step="1"
-              value="0"
-            />
+              value="0">
           </div>
           <div class="container__filter">
             <label for="sepia" class="filter__title">Sepia</label>
@@ -158,12 +151,11 @@
               min="0"
               max="100"
               step="1"
-              value="0"
-            />
+              value="0">
           </div>
           <div class="container__filter">
             <label for="hue" class="filter__title">HUE</label>
-            <input type="range" id="hue" min="0" max="359" step="1" value="0" />
+            <input type="range" id="hue" min="0" max="359" step="1" value="0">
           </div>
           <div class="container__filter">
             <label for="saturation" class="filter__title">Saturación</label>
@@ -173,8 +165,7 @@
               min="100"
               max="1000"
               step="10"
-              value="100"
-            />
+              value="100">
           </div>
           <div class="container__filter">
             <label for="negative" class="filter__title">Negativo</label>
@@ -184,8 +175,7 @@
               min="0"
               max="1"
               step="0.1"
-              value="0"
-            />
+              value="0">
           </div>
         </div>
 
@@ -204,16 +194,14 @@
           <input
             type="text"
             class="container__inputText"
-            id="superiorTextInput"
-          />
+            id="superiorTextInput">
 
           <div class="container__checkbox">
             <input
               type="checkbox"
               id="superiorTextCheckbox"
-              class="checkbox__input"
-            />
-            <label for="" class="checkbox__text">Sin texto superior</label>
+              class="checkbox__input">
+            <label class="checkbox__text">Sin texto superior</label>
           </div>
         </div>
 
@@ -222,22 +210,20 @@
           <input
             type="text"
             class="container__inputText"
-            id="inferiorTextInput"
-          />
+            id="inferiorTextInput">
 
           <div class="container__checkbox">
             <input
               type="checkbox"
               id="inferiorTextCheckbox"
-              class="checkbox__input"
-            />
-            <label for="" class="checkbox__text">Sin texto inferior</label>
+              class="checkbox__input">
+            <label class="checkbox__text">Sin texto inferior</label>
           </div>
         </div>
 
         <div class="settings__container">
           <h3 class="container__title">Fuente</h3>
-          <select name="" id="fontSelect" class="container__largeSelect">
+          <select id="fontSelect" class="container__largeSelect">
             <option value="'arial', sans-serif">Arial</option>
             <option value="'arial black', sans-serif">Arial Black</option>
             <option value="'american typewriter', serif">
@@ -255,8 +241,7 @@
               type="number"
               id="fontSizeInput"
               class="alignment__input"
-              value="22"
-            />
+              value="22">
             <button class="alignment__button" id="alignLeft">
               <i class="fa-solid fa-align-left"></i>
             </button>
@@ -278,8 +263,7 @@
                   type="color"
                   id="textColor"
                   class="text__input"
-                  value="#000000"
-                />
+                  value="#000000">
                 <span class="text__hexa" id="textColorHexa">#000000</span>
               </div>
             </div>
@@ -291,8 +275,7 @@
                   type="color"
                   id="textBackgroundColor"
                   class="background__input"
-                  value="#FFFFFF"
-                />
+                  value="#FFFFFF">
                 <span class="background__hexa" id="textBackgroundColorHexa"
                   >#FFFFFF</span
                 >
@@ -304,9 +287,8 @@
             <input
               type="checkbox"
               id="transparentBackgroundCheckbox"
-              class="checkbox__input"
-            />
-            <label for="" class="checkbox__text">Fondo transparente</label>
+              class="checkbox__input">
+            <label class="checkbox__text">Fondo transparente</label>
           </div>
         </div>
 
@@ -327,8 +309,7 @@
             class="container__inputText"
             value="20"
             min="10"
-            max="50"
-          />
+            max="50">
         </div>
         <div class="settings__container">
           <h3 class="container__title">Interlineado</h3>

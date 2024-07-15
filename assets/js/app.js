@@ -58,7 +58,8 @@ imageInput.addEventListener('input', (e) => {
 
     imageContainer.innerHTML = '';
     imageMeme.setAttribute('src', imageUrl);
-    imageMeme.classList.add("container__image")
+    imageMeme.setAttribute('alt', 'Tu meme');
+    imageMeme.classList.add("container__image");
     imageContainer.append(imageMeme);
 });
 
