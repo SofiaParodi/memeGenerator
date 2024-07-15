@@ -23,7 +23,6 @@ body {
 }
 
 
-
 /* meme */
 
 .main__meme {
@@ -76,4 +75,18 @@ body {
 
 .alignment__button {
   padding: 2% 5%;
+}
+
+.alignment__input {
+  width: 13dvw;
+}
+
+.background__color, .background__select {
+  width: 11.8dvw;
+}
+
+/* nav bar */
+.navBar__button {
+  height: 4.7dvh;
+  width: 2.5dvw;
 }

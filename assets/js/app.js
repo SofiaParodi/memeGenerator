@@ -46,15 +46,17 @@ closeBtn.addEventListener('click', ()  => {
     panelText.classList.add("hidden");
 })
 
+
 /* meme */
-const imageMeme = document.getElementById("imageMeme");
 const imageInput = document.getElementById("imageInput");
+const imageContainer = document.getElementById("imageContainer");
 
 imageInput.addEventListener('input', (e) => {
     let imageUrl = e.target.value;
-    imageMeme.style.backgroundImage = "url('" + imageUrl + "')";
-    imageMeme.style.backgroundRepeat = "no-repeat";
-    
+    let imageMeme = document.createElement("img");
+    imageMeme.setAttribute('src', imageUrl);
+    imageMeme.classList.add("container__image")
+    imageContainer.append(imageMeme);
 });
 
 /* image color background */
@@ -221,15 +223,15 @@ textBackgroundColor.addEventListener('input', (e) => {
 
 /* transparent background */
 const transparentBackgroundCheckbox = document.getElementById("transparentBackgroundCheckbox");
-const mainMeme = document.getElementById("mainMeme");
+const meme = document.getElementById("meme");
 
 transparentBackgroundCheckbox.addEventListener('input', () => {
     if (transparentBackgroundCheckbox.checked) {
-    mainMeme.style.backgroundColor = 'transparent';
+    meme.style.backgroundColor = 'transparent';
     superiorText.style.backgroundColor = 'transparent';
     inferiorText.style.backgroundColor = 'transparent';
     } else {
-        mainMeme.style.backgroundColor = textBackgroundColor.value;
+        meme.style.backgroundColor = textBackgroundColor.value;
         superiorText.style.backgroundColor = textBackgroundColor.value;
         inferiorText.style.backgroundColor = textBackgroundColor.value;
     }
@@ -275,4 +277,14 @@ const lineSpacing = document.getElementById("lineSpacing");
 lineSpacing.addEventListener('input', (e) => {
     superiorText.style.lineHeight = e.target.value;
     inferiorText.style.lineHeight = e.target.value;
+})
+
+/* download btn */
+const downloadBtn = document.getElementById("downloadBtn");
+
+downloadBtn.addEventListener('click', () => {
+    domtoimage.toBlob(meme).then(function (blob) {
+        saveAs(blob, 'meme.png')
+    }
+    )
 })
