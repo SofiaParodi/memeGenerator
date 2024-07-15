@@ -16,6 +16,7 @@ body {
 
 .header__button {
   width: 10dvh;
+  height: 5dvh;
 }
 
 .header__logo {
@@ -26,11 +27,10 @@ body {
 /* meme */
 
 .main__meme {
-  width: 35dvw;
   height: 65dvh;
 }
 
-.meme__superiorText, .meme__inferiorText { 
+.meme__superiorText, .meme__inferiorText, .main__meme { 
   width: 35dvw;
 }
 
@@ -53,7 +53,7 @@ body {
 
 /* panel */
 .panel {
-    width: 25dvw;
+    width: 26dvw;
     height: 93dvh;
     right: 0;
     bottom: 0;
@@ -61,16 +61,20 @@ body {
 }
 
 /* panel content */
-.container__inputText, .container__largeSelect {
-    width: 24dvw;
+.container__inputText {
+    height: 4dvh;
+}
+
+.container__largeSelect {
+  height: 4dvh;
 }
 
 .color__text, .color__background {
-  width: 11.8dvw;
+  height: 4dvh;
 }
 
 .container__checkbox {
-  margin: 0;
+  margin: 1;
 }
 
 .alignment__button {
@@ -78,15 +82,26 @@ body {
 }
 
 .alignment__input {
-  width: 13dvw;
+
+  height: 4dvh;
 }
 
 .background__color, .background__select {
-  width: 11.8dvw;
+  width: 12dvw;
+  height: 4dvh;
+}
+
+.row__button {
+  padding: 3% 6%;
 }
 
 /* nav bar */
+.aside__navBar {
+  width: 4dvw;
+}
+
+
 .navBar__button {
-  height: 4.7dvh;
-  width: 2.5dvw;
+  height: 5dvh;
+  width: 3dvw;
 }

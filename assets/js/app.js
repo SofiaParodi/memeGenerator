@@ -26,8 +26,8 @@ imageBtn.addEventListener('click', () => {
     panel.classList.remove("hidden");
     panelImage.classList.remove("hidden");
     panelText.classList.add("hidden");
-    
 });
+
 
 textBtn.addEventListener('click', () => {
     panel.classList.remove("hidden");

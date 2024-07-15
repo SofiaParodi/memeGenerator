@@ -123,7 +123,7 @@ body {
 }
 
 .container__inputText, .alignment__input {
-  width: 95dvw;
+  width: 99%;
   height: 4dvh;
   border: none;
   border-radius: 5px;
@@ -137,13 +137,17 @@ body {
 }
 
 .background__color, .color__background, .color__text {
-  width: 47dvw;
+  width: 100%;
   height: 4dvh;
   border: none;
   border-radius: 5px;
   background-color: var(--tertiary-color);
   display: flex;
   align-items: center;
+}
+
+.color__background, .color__text {
+  width: 47dvw;
 }
 
 .color__input, .text__input, .background__input {
@@ -160,7 +164,7 @@ body {
 .background__select {
   border: none;
   height: 4dvh;
-  width: 47dvw;
+  width: 100%;
   background-color: var(--tertiary-color);
   border-radius: 5px;
   color: var(--text-color);
@@ -190,7 +194,7 @@ body {
 .container__largeSelect {
   border: none;
   height: 4dvh;
-  width: 96dvw;
+  width: 100%;
   background-color: var(--tertiary-color);
   border-radius: 5px;
   color: var(--text-color);
@@ -280,3 +284,33 @@ input[type="range"]::-webkit-slider-thumb {
   background-color: var(--tertiary-color);
 }
 
+.navBar__button:focus {
+  background-color: var(--active-btn);
+}
+
+
+/* landscape */
+@media screen and (orientation: landscape) {
+  /* header */
+  .header {
+    height: 12dvh;
+  }
+
+  .header__logo {
+    width: 13dvw;
+  }
+
+  .header__button {
+    height: 9dvh;
+  }
+
+  /* panel */
+  .container__inputText, .background__color, .background__select, .container__largeSelect, .alignment__input, .color__text, .color__background {
+    height: 10dvh;
+  }
+
+  /* navbar */
+  .aside__navBar {
+    height: 12dvh;
+  }
+}

@@ -16,6 +16,7 @@
     --tertiary-color: #ddd4e7;
     --text-color: #746c88;
     --header-desktop-color: #b1a4c4;
+    --active-btn: #a28ed4;
     --font: 'arial', sans-serif;
     
 }
@@ -25,6 +26,7 @@
     --secondary-color: #352F44;
     --tertiary-color: #5a5070;
     --header-desktop-color: #272231;
+    --active-btn: #5e4a8b;
     --text-color: #B9B4C7;
 }
 
@@ -36,4 +38,5 @@ body {
     font-family: var(--font);
     color: var(--text-color);
     background-color: var(--primary-color);
+    overflow: hidden;
 }

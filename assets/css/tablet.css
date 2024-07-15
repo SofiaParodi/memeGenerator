@@ -1,0 +1,28 @@
+/* header */
+.header__button {
+    width: 13dvw;
+}
+
+/* meme */
+.main__meme {
+    height: 65dvh;
+}
+.main__meme, .meme__superiorText, .meme__inferiorText {
+    width: 65dvw;
+}
+
+/* panel */
+
+.alignment__button {
+    padding: 1% 4%;
+}
+
+.row__button {
+    padding: 2% 7%;
+}
+
+/* navbar */
+.navBar__button {
+    width: 6.5dvw;
+    height: 6dvh;
+}
